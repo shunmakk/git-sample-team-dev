@@ -2,7 +2,7 @@ package domain;
 
 public class Car {
     private String name;
-    private int long_speed;
+    private int shortSpeed;
     private boolean secondHand;
 
     public String getName() {
@@ -14,11 +14,11 @@ public class Car {
     }
 
     public int getSpeed() {
-        return long_speed;
+        return shortSpeed;
     }
 
-    public void setSpeed(int long_speed) {
-        this.long_speed = long_speed;
+    public void setSpeed(int speed) {
+        this.shortSpeed = speed;
     }
 
     public boolean isSecondHand() {
@@ -33,7 +33,7 @@ public class Car {
     public String toString() {
         return "Car[" +
                 "name='" + name + '\'' +
-                ", long_speed=" + long_speed +
+                ", speed=" + shortSpeed +
                 ", secondHand=" + secondHand +
                 ']';
     }
